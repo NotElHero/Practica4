@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/boton4Rondas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="4 rondas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton6Rondas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="6 rondas"
+        app:layout_constraintEnd_toEndOf="@+id/boton4Rondas"
+        app:layout_constraintStart_toStartOf="@+id/boton4Rondas"
+        app:layout_constraintTop_toBottomOf="@+id/boton4Rondas" />
+
+    <Button
+        android:id="@+id/boton8Rondas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="8 rondas"
+        app:layout_constraintEnd_toEndOf="@+id/boton6Rondas"
+        app:layout_constraintStart_toStartOf="@+id/boton6Rondas"
+        app:layout_constraintTop_toBottomOf="@+id/boton6Rondas" />
+
+    <Button
+        android:id="@+id/boton10Rondas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="10 rondas"
+        app:layout_constraintEnd_toEndOf="@+id/boton8Rondas"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/boton8Rondas"
+        app:layout_constraintTop_toBottomOf="@+id/boton8Rondas" />
+
+    <Button
+        android:id="@+id/botonAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="atras"
+        app:layout_constraintEnd_toEndOf="@+id/boton10Rondas"
+        app:layout_constraintStart_toStartOf="@+id/boton10Rondas"
+        app:layout_constraintTop_toBottomOf="@+id/boton10Rondas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
