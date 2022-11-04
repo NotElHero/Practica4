@@ -1,9 +1,9 @@
 package com.example.practica4;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class agregarParticipante {
-    List participantes;
+    ArrayList participantes;
 
     public String agregar(String participante){
         participantes.add(participante);

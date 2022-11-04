@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button botonEmpezar, botonSalir, boton4Rondas, boton6Rondas, boton8Rondas, boton10Rondas, botonAtras, botonAnadir;
     int nRondas;
+    EditText nombreParticipante;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.boton4Rondas:
                 nRondas = 4;
                 setContentView(R.layout.layout_creador_pj);
+                //TODO: todo esto crashea la app
+                //Hay que cambiarlo
                 botonAnadir = findViewById(R.id.botonAnadir);
                 botonAnadir.setOnClickListener(this);
+                agregarParticipante agregar = new agregarParticipante();
+                agregar.agregar(String.valueOf(nombreParticipante.getText()));
                 break;
             case R.id.boton6Rondas:
                 nRondas = 6;

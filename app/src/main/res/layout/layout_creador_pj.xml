@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editNombreParticipante"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="150dp"
@@ -23,9 +23,9 @@
         android:layout_height="125dp"
         android:layout_marginTop="50dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintEnd_toEndOf="@+id/editNombreParticipante"
+        app:layout_constraintStart_toStartOf="@+id/editNombreParticipante"
+        app:layout_constraintTop_toBottomOf="@+id/editNombreParticipante" />
 
     <Button
         android:id="@+id/botonAnadir"

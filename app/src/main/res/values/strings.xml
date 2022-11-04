@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Practica4</string>
+    <string-array name="eventos">
+        <item>" ha matado a "</item>
+        <item>" ha herido a "</item>
+        <item>" se ha aliado con "</item>
+        <item>" ha traicionado a "</item>
+        <item>" ha encontrado un "</item>
+        <item>" ha muerto"</item>
+    </string-array>
 </resources>
