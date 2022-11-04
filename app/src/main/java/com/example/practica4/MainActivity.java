@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button botonEmpezar, botonSalir, boton4Rondas, boton6Rondas, boton8Rondas, boton10Rondas, botonAtras;
+    Button botonEmpezar, botonSalir, boton4Rondas, boton6Rondas, boton8Rondas, boton10Rondas, botonAtras, botonAnadir;
     int nRondas;
 
     @Override
@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         botonEmpezar.setOnClickListener(this);
         botonSalir = findViewById(R.id.botonSalir);
         botonSalir.setOnClickListener(this);
-
     }
 
     @Override
@@ -42,20 +41,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.botonSalir:
 
                 break;
-//            case R.id.botonAtras:
-//                setContentView(R.layout.activity_main);
-//                break;
+            case R.id.botonAtras:
+                setContentView(R.layout.activity_main);
+               break;
             case R.id.boton4Rondas:
                 nRondas = 4;
+                setContentView(R.layout.layout_creador_pj);
+                botonAnadir = findViewById(R.id.botonAnadir);
+                botonAnadir.setOnClickListener(this);
                 break;
             case R.id.boton6Rondas:
                 nRondas = 6;
+                setContentView(R.layout.layout_creador_pj);
                 break;
             case R.id.boton8Rondas:
                 nRondas = 8;
+                setContentView(R.layout.layout_creador_pj);
                 break;
             case R.id.boton10Rondas:
                 nRondas = 10;
+                setContentView(R.layout.layout_creador_pj);
                 break;
 
         }
